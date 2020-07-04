@@ -1,0 +1,17 @@
+imports:
+  - { resource: 'vendor/symplify/easy-coding-standard/config/clean-code.yml' }
+  - { resource: 'vendor/symplify/easy-coding-standard/config/symfony.yml' }
+  - { resource: 'vendor/symplify/easy-coding-standard/config/php71.yml' }
+
+parameters:
+  skip:
+    SlevomatCodingStandard\Sniffs\TypeHints\TypeHintDeclarationSniff.MissingParameterTypeHint:
+      - 'src/Infrastructure/Testing/RedisInMemory.php'
+    SlevomatCodingStandard\Sniffs\TypeHints\TypeHintDeclarationSniff.MissingReturnTypeHint:
+      - 'src/Infrastructure/Testing/RedisInMemory.php'
+    SlevomatCodingStandard\Sniffs\Classes\UnusedPrivateElementsSniff.UnusedMethod:
+      - 'src/Common/Alerting/AlertingProcessor.php'
+    Symplify\CodingStandard\Fixer\Naming\PropertyNameMatchingTypeFixer:
+      - 'src/Domain/Exception/ParentExceptionTrait.php'
+    Symplify\CodingStandard\Fixer\Commenting\ParamReturnAndVarTagMalformsFixer:
+      - 'src/Domain/Exception/ParentExceptionTrait.php'
