@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace MicroModule\JWT\Service\Token;
+namespace MicroModule\JWT\Token;
 
 use DateTimeInterface;
 
@@ -13,14 +13,14 @@ interface TokenInterface
     /**
      * Returns the token claims
      *
-     * @return \MicroModule\JWT\Service\Token\DataSet
+     * @return \MicroModule\JWT\Token\DataSet
      */
     public function claims(): DataSet;
 
     /**
      * Returns the token headers
      *
-     * @return \MicroModule\JWT\Service\Token\DataSet
+     * @return \MicroModule\JWT\Token\DataSet
      */
     public function headers(): DataSet;
 

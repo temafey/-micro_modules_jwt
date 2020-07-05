@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace MicroModule\JWT\Service\Token;
+namespace MicroModule\JWT\Token;
 
 /**
  * Defines the list of claims that are registered in the IANA "JSON Web Token Claims" registry

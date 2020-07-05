@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace MicroModule\JWT\Service\Parser;
+namespace MicroModule\JWT\Parser;
 
 /**
  * An utilitarian class that encodes data according with JOSE specifications
@@ -13,7 +13,7 @@ interface EncoderInterface
      *
      * @param mixed $data
      * @return string
-     * @throws \MicroModule\JWT\Service\Parser\Exception When something goes wrong while encoding
+     * @throws \MicroModule\JWT\Parser\Exception When something goes wrong while encoding
      */
     public function jsonEncode($data): string;
 

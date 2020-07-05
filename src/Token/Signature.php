@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace MicroModule\JWT\Service\Token;
+namespace MicroModule\JWT\Token;
 
 /**
  * This class represents a token signature

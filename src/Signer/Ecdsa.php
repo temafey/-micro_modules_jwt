@@ -1,10 +1,10 @@
 <?php declare(strict_types = 1);
 
-namespace MicroModule\JWT\Service\Signer;
+namespace MicroModule\JWT\Signer;
 
 use Mdanter\Ecc\EccFactory;
-use MicroModule\JWT\Service\Signer\Ecdsa\EccAdapter;
-use MicroModule\JWT\Service\Signer\Ecdsa\KeyParser;
+use MicroModule\JWT\Signer\Ecdsa\EccAdapter;
+use MicroModule\JWT\Signer\Ecdsa\KeyParser;
 
 /**
  * Base class for ECDSA signers
@@ -12,10 +12,10 @@ use MicroModule\JWT\Service\Signer\Ecdsa\KeyParser;
 abstract class Ecdsa implements SignerInterface
 {
 
-    /** @var \MicroModule\JWT\Service\Signer\Ecdsa\EccAdapter */
+    /** @var \MicroModule\JWT\Signer\Ecdsa\EccAdapter */
     private $adapter;
 
-    /** @var \MicroModule\JWT\Service\Signer\Ecdsa\KeyParser */
+    /** @var \MicroModule\JWT\Signer\Ecdsa\KeyParser */
     private $keyParser;
 
     public static function create(): Ecdsa

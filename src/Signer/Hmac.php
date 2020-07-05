@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace MicroModule\JWT\Service\Signer;
+namespace MicroModule\JWT\Signer;
 
 /**
  * Base class for hmac signers

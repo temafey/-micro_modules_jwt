@@ -1,13 +1,13 @@
 <?php
 declare(strict_types=1);
 
-namespace MicroModule\JWT\Service\Validation\Constraint;
+namespace MicroModule\JWT\Validation\Constraint;
 
-use MicroModule\JWT\Service\Signer\SignerInterface;
-use MicroModule\JWT\Service\Signer\Key;
-use MicroModule\JWT\Service\Token\TokenInterface;
-use MicroModule\JWT\Service\Token\Plain;
-use MicroModule\JWT\Service\Validation\ConstraintViolationException;
+use MicroModule\JWT\Signer\SignerInterface;
+use MicroModule\JWT\Signer\Key;
+use MicroModule\JWT\Token\TokenInterface;
+use MicroModule\JWT\Token\Plain;
+use MicroModule\JWT\Validation\ConstraintViolationException;
 
 /**
  */

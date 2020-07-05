@@ -1,8 +1,8 @@
 <?php declare(strict_types = 1);
 
-namespace MicroModule\JWT\Service\Signer\Ecdsa;
+namespace MicroModule\JWT\Signer\Ecdsa;
 
-use MicroModule\JWT\Service\Signer\Ecdsa;
+use MicroModule\JWT\Signer\Ecdsa;
 
 /**
  * Signer for ECDSA SHA-256

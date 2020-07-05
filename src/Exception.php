@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace MicroModule\JWT\Service;
+namespace MicroModule\JWT;
 
 /**
  *

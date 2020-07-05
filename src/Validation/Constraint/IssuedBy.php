@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace MicroModule\JWT\Service\Validation\Constraint;
+namespace MicroModule\JWT\Validation\Constraint;
 
-use MicroModule\JWT\Service\Token\TokenInterface;
-use MicroModule\JWT\Service\Validation\ConstraintViolationException;
+use MicroModule\JWT\Token\TokenInterface;
+use MicroModule\JWT\Validation\ConstraintViolationException;
 
 /**
  */

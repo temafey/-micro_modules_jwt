@@ -1,9 +1,9 @@
 <?php
 declare(strict_types=1);
 
-namespace MicroModule\JWT\Service\Validation;
+namespace MicroModule\JWT\Validation;
 
-use MicroModule\JWT\Service\Exception;
+use MicroModule\JWT\Exception;
 
 /**
  *

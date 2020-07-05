@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace MicroModule\JWT\Service\Validation;
+namespace MicroModule\JWT\Validation;
 
-use MicroModule\JWT\Service\Exception;
-use MicroModule\JWT\Service\Validation\Constraint\ConstraintInterface;
+use MicroModule\JWT\Exception;
+use MicroModule\JWT\Validation\Constraint\ConstraintInterface;
 use Throwable;
 
 /**

@@ -1,10 +1,10 @@
 <?php declare(strict_types = 1);
 
-namespace MicroModule\JWT\Service\Validation\Constraint;
+namespace MicroModule\JWT\Validation\Constraint;
 
 use DateTimeImmutable;
-use MicroModule\JWT\Service\Token\TokenInterface;
-use MicroModule\JWT\Service\Validation\Constraint\ConstraintViolationException;
+use MicroModule\JWT\Token\TokenInterface;
+use MicroModule\JWT\Validation\Constraint\ConstraintViolationException;
 
 final class ValidAt implements ConstraintInterface
 {
@@ -39,14 +39,14 @@ final class ValidAt implements ConstraintInterface
     private function assertMinimumTime(TokenInterface $token, DateTimeImmutable $now): void
     {
         if (! $token->isMinimumTimeBefore($now)) {
-            throw new \MicroModule\JWT\Service\Validation\Constraint\ConstraintViolationException($this, 'The token cannot be used yet');
+            throw new \MicroModule\JWT\Validation\Constraint\ConstraintViolationException($this, 'The token cannot be used yet');
         }
     }
 
     private function assertIssueTime(TokenInterface $token, DateTimeImmutable $now): void
     {
         if (! $token->hasBeenIssuedBefore($now)) {
-            throw new \MicroModule\JWT\Service\Validation\Constraint\ConstraintViolationException($this, 'The token was issued in the future');
+            throw new \MicroModule\JWT\Validation\Constraint\ConstraintViolationException($this, 'The token was issued in the future');
         }
     }
 

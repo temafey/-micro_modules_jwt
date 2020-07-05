@@ -1,8 +1,8 @@
 <?php declare(strict_types = 1);
 
-namespace MicroModule\JWT\Service\Signer\Rsa;
+namespace MicroModule\JWT\Signer\Rsa;
 
-use MicroModule\JWT\Service\Signer\Rsa;
+use MicroModule\JWT\Signer\Rsa;
 use const OPENSSL_ALGO_SHA384;
 
 /**

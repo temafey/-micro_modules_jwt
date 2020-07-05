@@ -1,8 +1,8 @@
 <?php declare(strict_types = 1);
 
-namespace MicroModule\JWT\Service\Signer\Hmac;
+namespace MicroModule\JWT\Signer\Hmac;
 
-use MicroModule\JWT\Service\Signer\Hmac;
+use MicroModule\JWT\Signer\Hmac;
 
 /**
  * Signer for HMAC SHA-256

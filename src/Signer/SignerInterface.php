@@ -1,6 +1,6 @@
 <?php declare(strict_types = 1);
 
-namespace MicroModule\JWT\Service\Signer;
+namespace MicroModule\JWT\Signer;
 
 /**
  * Basic interface for token signers
@@ -19,7 +19,7 @@ interface SignerInterface
      * Creates a hash for the given payload
      *
      * @param string $payload
-     * @param \MicroModule\JWT\Service\Signer\Key $key
+     * @param \MicroModule\JWT\Signer\Key $key
      * @return string
      * @throws \InvalidArgumentException When given key is invalid
      */
@@ -30,7 +30,7 @@ interface SignerInterface
      *
      * @param string $expected
      * @param string $payload
-     * @param \MicroModule\JWT\Service\Signer\Key $key
+     * @param \MicroModule\JWT\Signer\Key $key
      * @return bool
      * @throws \InvalidArgumentException When given key is invalid
      */

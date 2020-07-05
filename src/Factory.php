@@ -1,16 +1,16 @@
 <?php
 declare(strict_types=1);
 
-namespace MicroModule\JWT\Service;
+namespace MicroModule\JWT;
 
-use MicroModule\JWT\Service\Signer\Key as SignerKey;
-use MicroModule\JWT\Service\Signer\SignerInterface;
-use MicroModule\JWT\Service\Token\BuilderInterface;
-use MicroModule\JWT\Service\Parser\ParserInterface;
-use MicroModule\JWT\Service\Validation\ConstraintViolationException;
-use MicroModule\JWT\Service\Validation\InvalidTokenException;
-use MicroModule\JWT\Service\Validation\ValidatorInterface;
-use MicroModule\JWT\Service\Validation\Constraint;
+use MicroModule\JWT\Signer\Key as SignerKey;
+use MicroModule\JWT\Signer\SignerInterface;
+use MicroModule\JWT\Token\BuilderInterface;
+use MicroModule\JWT\Parser\ParserInterface;
+use MicroModule\JWT\Validation\ConstraintViolationException;
+use MicroModule\JWT\Validation\InvalidTokenException;
+use MicroModule\JWT\Validation\ValidatorInterface;
+use MicroModule\JWT\Validation\Constraint;
 
 /**
  *

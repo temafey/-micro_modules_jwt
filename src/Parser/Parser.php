@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace MicroModule\JWT\Service\Parser;
+namespace MicroModule\JWT\Parser;
 
 /**
  * An utilitarian class that encodes and decodes data according with JOSE specifications

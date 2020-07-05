@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace MicroModule\JWT\Service\Parser;
+namespace MicroModule\JWT\Parser;
 
 /**
  * An exception to be used when encoding or decoding

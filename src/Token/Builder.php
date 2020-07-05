@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace MicroModule\JWT\Service\Token;
+namespace MicroModule\JWT\Token;
 
 use DateTimeImmutable;
-use MicroModule\JWT\Service\Parser;
-use MicroModule\JWT\Service\Signer\Key;
-use MicroModule\JWT\Service\Signer\SignerInterface;
+use MicroModule\JWT\Parser;
+use MicroModule\JWT\Signer\Key;
+use MicroModule\JWT\Signer\SignerInterface;
 
 /**
  * This class makes easier the token creation process

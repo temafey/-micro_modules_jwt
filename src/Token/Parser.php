@@ -1,12 +1,12 @@
 <?php
 declare(strict_types=1);
 
-namespace MicroModule\JWT\Service\Token;
+namespace MicroModule\JWT\Token;
 
 use DateTimeImmutable;
 use InvalidArgumentException;
-use MicroModule\JWT\Service\Parser\ParserInterface;
-use MicroModule\JWT\Service\Parser\DecoderInterface;
+use MicroModule\JWT\Parser\ParserInterface;
+use MicroModule\JWT\Parser\DecoderInterface;
 
 /**
  * This class parses the JWT strings and convert them into tokens

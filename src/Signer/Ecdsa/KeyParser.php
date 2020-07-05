@@ -1,10 +1,10 @@
 <?php
 declare(strict_types=1);
 
-namespace MicroModule\JWT\Service\Signer\Ecdsa;
+namespace MicroModule\JWT\Signer\Ecdsa;
 
 use InvalidArgumentException;
-use MicroModule\JWT\Service\Signer\Key;
+use MicroModule\JWT\Signer\Key;
 use Mdanter\Ecc\Crypto\Key\PrivateKeyInterface;
 use Mdanter\Ecc\Crypto\Key\PublicKeyInterface;
 use Mdanter\Ecc\Math\GmpMathInterface;

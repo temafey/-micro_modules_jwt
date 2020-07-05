@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace MicroModule\JWT\Service\Signer\Ecdsa;
+namespace MicroModule\JWT\Signer\Ecdsa;
 
 use GMP;
 use Mdanter\Ecc\Crypto\Signature\Signature;
